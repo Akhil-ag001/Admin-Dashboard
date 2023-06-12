@@ -5,78 +5,261 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet"><title>Admin Dashboard</title>
 </head>
 <body>
     <div class="container">
+
         <div class="sidebar">
-            <div class="sidebar-title">DashBoard</div>
-            <a href="" class="side-link1">Home</a>
-            <a href="" class="side-link2">Profile</a>
-            <a href="" class="side-link3">Messages</a>
-            <a href="" class="side-link4">History</a>
-            <a href="" class="side-link5">Tasks</a>
-            <a href="" class="side-link6">Communities</a>
+            <div class="side-link image-text" id="sidebar-title">
+                <img src="Images/dashboard.svg" id="dashboard">
+                <span class="side-title-text">DashBoard</span>
+            </div>
             <br>
-            <a href="" class="side-link8">Settings</a>
-            <a href="" class="side-link9">Help</a>
-            <a href="" class="side-link10">Security</a>
+            <a href="" class="side-link image-text" id="home">
+                <img src="Images/home.svg" class="icon">
+                <span class="side-link-text">Home</span>
+            </a>
+            <a href="" class="side-link image-text" id="profile">
+                <img src="Images/profile.svg" class="icon">
+                <span class="side-link-text">Profile</span>
+            </a>
+            <a href="" class="side-link image-text" id="messages">
+                <img src="Images/message.svg" class="icon">
+                <span class="side-link-text">Messages</span>
+            </a>
+            <a href="" class="side-link image-text" id="history">
+                <img src="Images/history.svg" class="icon">
+                <span class="side-link-text">History</span>
+            </a>
+            <a href="" class="side-link image-text" id="tasks">
+                <img src="Images/tasks.svg" class="icon">
+                <span class="side-link-text">Tasks</span>
+            </a>
+            <a href="" class="side-link image-text" id="people">
+                <img src="Images/following.svg" class="icon">
+                <span class="side-link-text">Communities</span>
+            </a>
+            <br>
+            <a href="" class="side-link image-text" id="settings">
+                <img src="Images/settings.svg" class="icon">
+                <span class="side-link-text">Settings</span>
+            </a>
+            <a href="" class="side-link image-text" id="help">
+                <img src="Images/help.svg" class="icon">
+                <span class="side-link-text">Help</span>
+            </a>
+            <a href="" class="side-link image-text" id="security">
+                <img src="Images/security.svg" class="icon">
+                <span class="side-link-text">Security</span>
+            </a>
         </div>
+
         <div class="header">
-            <label for="search-bar">
+            <label for="search-bar" class="search-bar">
+                <img src="Images/search.svg" class="icon">
                 <input type="search" to="search-bar">
             </label>
             <div class="header-links">
-                <a href="#">noti</a>
-                <a href="#">Profile</a>
+                <a href="#">
+                    <img src="Images/notification.svg" class="icon">
+                </a>
+                <a href="#" class="profile-link">
+                    <img src="Profile/profile1.jpg" class="profile">
+                    <span>Akhil Agarwal</span>
+                </a>
             </div>
-            <div class="greeting">Hello there user</div>
+            <div class="greeting">
+                <img src="Profile/profile1.jpg" class="main-profile">
+                <div>
+                    Hi there,
+                    <div class="user-name">Akhil Agarwal(@akhil-ag001)</div>
+                </div>
+            </div>
             <div class="header-buttons">
                 <button type="button">New</button>
                 <button type="button">Upload</button>
                 <button type="button">Share</button>
             </div>
         </div>
+
         <div class="main">
-            <div class="projects">
-                <div class="project title">
+            <div id="projects">
+                <div id="projects-title">
                     Your Projects
                 </div>
-                <div class="project content">
-                    <div class="project1">project1</div>
-                    <div class="project2">project2</div>
-                    <div class="project3">project3</div>
-                    <div class="project4">project4</div>
-                    <div class="project5">project5</div>
-                    <div class="project6">project6</div>
+                <div id="projects-content">
+                    <div class="project">
+                        <div class="project-tile-title">Very cool Project</div>
+                        <div class="project-tile-content">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur enim unde quaerat ratione dicta corporis veritatis consequatur cum asperiores sit repellendus rem voluptas aliquid mollitia laudan.
+                        </div>
+                        <div class="project-tile-buttons">
+                            <a href="">
+                                <img src="Images/edit.svg" class="icon">
+                            </a>
+                            <a href="">
+                                <img src="Images/info.svg" class="icon">
+                            </a>
+                            <a href="">
+                                <img src="Images/share.svg" class="icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-tile-title">I am Grateful</div>
+                        <div class="project-tile-content">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi facilis, et laudantium id beatae cupiditate totam soluta sapiente provident enim molestias, eum minus non unde velit veniam voluptatibus quidem ex!
+                        </div>
+                        <div class="project-tile-buttons">
+                            <a href="">
+                                <img src="Images/edit.svg" class="icon">
+                            </a>
+                            <a href="">
+                                <img src="Images/info.svg" class="icon">
+                            </a>
+                            <a href="">
+                                <img src="Images/share.svg" class="icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-tile-title">Impossible app</div>
+                        <div class="project-tile-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis cumque explicabo minus nihil fugit hic ipsa nobis nam corporis, sed ipsum rerum tenetur, at aut voluptatem ullam voluptate dolor minima possimus ea.
+                        </div>
+                        <div class="project-tile-buttons">
+                            <a href="">
+                                <img src="Images/edit.svg" class="icon">
+                            </a>
+                            <a href="">
+                                <img src="Images/info.svg" class="icon">
+                            </a>
+                            <a href="">
+                                <img src="Images/share.svg" class="icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-tile-title">Easy peasy Project</div>
+                        <div class="project-tile-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Xepturi quaerat nostrum quas libero quam laborum facilis optio delectus impedit officia explicabo dignissimos, dolor eius placeat rem minima dolorum ullam.
+                        </div>
+                        <div class="project-tile-buttons">
+                            <a href="">
+                                <img src="Images/edit.svg" class="icon">
+                            </a>
+                            <a href="">
+                                <img src="Images/info.svg" class="icon">
+                            </a>
+                            <a href="">
+                                <img src="Images/share.svg" class="icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-tile-title">Ad Blocker</div>
+                        <div class="project-tile-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus pariatur, cupiditate nesciunt quia aliquid tempore itaque dignissimos natus autem nemo fugit quasi, sequi aut! Atque voluptate laboriosam obcaecati perspiciatis dolore seq?
+                        </div>
+                        <div class="project-tile-buttons">
+                            <a href="">
+                                <img src="Images/edit.svg" class="icon">
+                            </a>
+                            <a href="">
+                                <img src="Images/info.svg" class="icon">
+                            </a>
+                            <a href="">
+                                <img src="Images/share.svg" class="icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-tile-title">Money Maker</div>
+                        <div class="project-tile-content">
+                            Obcaecati optio autem voluptas, enim laborum, repellat quasi maiores beatae minus odio repellendus quos blanditiis. Dolorem temporibus qui at beatae eos, magni rem architecto consectetur nobis omnis sunt officiis nesciunt voluptatibus.
+                        </div>
+                        <div class="project-tile-buttons">
+                            <a href="">
+                                <img src="Images/edit.svg" class="icon">
+                            </a>
+                            <a href="">
+                                <img src="Images/info.svg" class="icon">
+                            </a>
+                            <a href="">
+                                <img src="Images/share.svg" class="icon">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="announcements">
-                <div class="announcement title">
-                    Announcements
-                </div>
-                <div class="announcement content">
-                    <div class="announcements1">announcements1</div>
-                    <div class="announcements2">announcements2</div>
-                    <div class="announcements3">announcements3</div>
-                </div>
-            </div>
-            <div class="suggestions">
-                <div class="suggestion title">
-                    You Might Like
-                </div>
-                <div class="suggestion content">
-                    <div class="suggestions1">suggestions1</div>
-                    <div class="suggestions2">suggestions2</div>
-                    <div class="suggestions3">suggestions3</div>
-                    <div class="suggestions4">suggestions4</div>
+            <div class="extras">
+                <div id="extra-box">
+                    <div id="announcements">
+                        <div id="announcements-title">
+                            Announcements
+                        </div>
+                        <div id="announcements-content">
+                            <div class="announcement">
+                                <div class="announcement-tile-title">announcement1</div>
+                                <div class="announcement-tile-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, quidem.</div>
+                            </div>
+                            <div class="announcement">
+                                <div class="announcement-tile-title">announcement2</div>
+                                <div class="announcement-tile-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates!</div>
+                            </div>
+                            <div class="announcement">
+                                <div class="announcement-tile-title">announcement3</div>
+                                <div class="announcement-tile-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="suggestions">
+                        <div id="suggestions-title">
+                            Suggestions
+                        </div>
+                        <div id="suggestions-content">
+                            <div class="suggestion">
+                                <img src="Profile/profile2.jpg" class="profile">
+                                <div>
+                                    @Tiger
+                                    <div>Save the Tigers</div>
+                                </div>
+                            </div>
+                            <div class="suggestion">
+                                <img src="Profile/profile3.jpg" class="profile">
+                                <div>
+                                    @Rabbit
+                                    <div>Underground Tunnels</div>
+                                </div>
+                            </div>
+                            <div class="suggestion">
+                                <img src="Profile/profile4.jpg" class="profile">
+                                <div>
+                                    @Frog
+                                    <div>Home for Frogs</div>
+                                </div>
+                            </div>
+                            <div class="suggestion">
+                                <img src="Profile/profile5.jpg" class="profile">
+                                <div>
+                                    @Sparrow
+                                    <div>Fly high in the Sky</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="footer">
-            <div class="my-links"></div>
+            <div class="my-links">ABCDEGFHIJKLMNOPQRSTUVWXYZ</div>
             <div class="credits"></div>
         </div>
+
     </div>
 
 </body>
